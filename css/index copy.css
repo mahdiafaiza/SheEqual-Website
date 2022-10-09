@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap");
+body {
+  margin: 0;
+
+  background-color: #ece1e6b4;
+}
+html {
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+.fwh-slide {
+  box-sizing: border-box;
+}
+
+@keyframes moveright {
+  0% {
+    transform: translateX(-100px);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.red {
+  animation: moveleft 1s linear 1;
+  animation-delay: 2.5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveleft {
+  0% {
+    transform: translateX(100px);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.ico {
+  animation: moveup 1s linear 1;
+  animation-delay: 2s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveup {
+  0% {
+    transform: translateY(100px);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.fwh-slide-ab {
+  background-color: #f1eded;
+  box-sizing: border-box;
+  height: 50vh;
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-size-adjust: auto;
+}
+
+.fwh-slide-bg {
+  box-sizing: border-box;
+}
+
+.btn-outline {
+  color: #f13f09;
+  background-color: #ffffff;
+  border-color: #f13f09;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.btn-outline {
+  color: #f13f09;
+  background-color: #ffffff;
+  border-color: #f13f09;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus,
+.btn-outline.active {
+  background: #f13f09;
+  color: #ffffff;
+  border-color: #f13f09;
+}
+
+.social-media-icons a {
+  color: rgb(24, 24, 24);
+}
+.social-media-icons a:hover {
+  color: #f13f09;
+}
+
+.col-md-6 img {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.18);
+}

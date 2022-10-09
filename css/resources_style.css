@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap");
+
+.container {
+  transform-style: preserve-3d;
+}
+
+.container .box {
+  position: relative;
+  width: 370px;
+  height: 370px;
+  margin: 20px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.container .box .body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 0.9s ease;
+}
+
+.container .box .body .imgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.container .box .body .imgContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .box .body .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+.container .box:hover .body {
+  transform: rotateY(180deg);
+}
+
+.container .box .body .content div {
+  transform-style: preserve-3d;
+  padding: 20px;
+  background: linear-gradient(45deg, #cc4b17, #e9660f);
+  transform: translateZ(100px);
+  font-size: 10px;
+  font-weight: bold;
+  text-align: justify;
+}
+.container h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.container .box .body .content div h3 {
+  letter-spacing: 1px;
+}
+.gallery h1 {
+  padding: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Nunito", sans-serif;
+  color: rgb(224, 96, 10);
+  box-sizing: border-box;
+  background-color: rgba(83, 83, 83, 0.288);
+}
+.gallery {
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: rgba(95, 95, 95, 0.24);
+}
+.fwh-slide-ab {
+  background-color: #f1eded;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Nunito", sans-serif !important;
+}
+.fwh-slide-ab h1 {
+  font-weight: bold;
+  font-family: "Nunito", sans-serif !important;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: rgb(255, 132, 61);
+}
+.fwh-slide-ab-top {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Nunito", sans-serif !important;
+}
+.fwh-slide-ab-top h1 {
+  font-weight: bold;
+  font-family: "Nunito", sans-serif !important;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: rgb(255, 132, 61);
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.column p {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+img {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+}

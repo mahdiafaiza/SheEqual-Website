@@ -1,0 +1,71 @@
+h1{
+	text-align: center;
+	margin-top: 25px;
+	font-size:7vw;
+	color: rgb(225, 70, 70);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+body {
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	position: relative;
+	animation: change 10s ease-in-out infinite;
+	font-family: "roboto", sans-serif;
+}
+@keyframes change{
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+.main-content {
+	padding: 100px 0;
+}
+
+.shadow {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.profile-card {
+	padding-bottom: 60px !important;
+    animation: moveright 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveright{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+.profile-card .profile-card_image img {
+	width: 200px;
+	height: 200px;
+	
+	object-fit: cover;
+	
+}
+.profile-card .profile-card_social {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.profile-card .profile-card_social img {
+	width: 33px;
+	margin: 5px 10px;
+}

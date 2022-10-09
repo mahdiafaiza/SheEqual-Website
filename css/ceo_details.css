@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif !important;
+}
+
+.shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.profile-card .profile-card_social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.main-content {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 60px;
+  background-color: rgb(66, 66, 66);
+}
+.h8 {
+  font-weight: bolder;
+  color: rgb(90, 90, 97);
+  font-size: 21px;
+}
+.team {
+  background-color: rgb(255, 255, 255);
+}
